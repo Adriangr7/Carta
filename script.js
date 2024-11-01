@@ -5,10 +5,18 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     // Datos de prueba (en un entorno real, verifica en el servidor)
     const validPassword = 'adriylucia26';
+    const validPassword2 = 'siemprejuntos';
 
     if (password === validPassword) {
         // Redirigir a la página de contenido
         window.location.href = 'contenido.html';
+    } else {
+        // Mostrar mensaje de error
+        document.getElementById('error-message').textContent = 'Contraseña incorrecta';
+    }
+    if (password === validPassword2) {
+        // Redirigir a la página de contenido
+        window.location.href = 'password2.html';
     } else {
         // Mostrar mensaje de error
         document.getElementById('error-message').textContent = 'Contraseña incorrecta';
